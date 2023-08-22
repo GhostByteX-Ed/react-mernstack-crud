@@ -14,7 +14,7 @@ export default class StudentList extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://0.0.0.0:4000')
+    axios.get('https://0.0.0.0:4000')
       .then(res => {
         this.setState({
           students: res.data
