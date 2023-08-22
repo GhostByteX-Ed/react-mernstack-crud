@@ -2,7 +2,8 @@ let express = require('express');
 let mongoose = require('mongoose');
 let cors = require('cors');
 let bodyParser = require('body-parser');
-
+const cors = require('cors');  
+app.use(cors());
 // Express Route
 const studentRoute = require('../backend/routes/student.route')
 
