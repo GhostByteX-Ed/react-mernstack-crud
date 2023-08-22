@@ -57,7 +57,7 @@ export default class EditStudent extends Component {
       rollno: this.state.rollno
     };
 
-    axios.put('http://localhost:4000/students/update-student/' + this.props.match.params.id, studentObject)
+    axios.put('http://0.0.0.0:4000/students/update-student/' + this.props.match.params.id, studentObject)
       .then((res) => {
         console.log(res.data)
         console.log('Student successfully updated')
